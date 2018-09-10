@@ -229,9 +229,9 @@ class SeoModule extends \TYPO3\CMS\Backend\Module\AbstractFunctionModule
             $uidList = array_map('intval', $pages);
             $uidList = implode(',', $uidList);
             $this->loadLanguageOverlays($uidList);
-            if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('realurl')) {
-                $this->loadPathCache($uidList);
-            }
+//            if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('realurl')) {
+//                $this->loadPathCache($uidList);
+//            }
 
             // Render information table
             $content .= $this->renderSaveButtons();

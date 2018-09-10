@@ -540,7 +540,7 @@ class SeoModule extends \TYPO3\CMS\Backend\Module\AbstractFunctionModule
         }
 
         $uriBuilder = GeneralUtility::makeInstance(UriBuilder::class);
-        return $uriBuilder->buildUriFromRoute('web_info', ['id' => $this->pObj->id]) . $addParams;
+        return $uriBuilder->buildUriFromModule('web_info', ['id' => $this->pObj->id]) . $addParams;
     }
 
 
